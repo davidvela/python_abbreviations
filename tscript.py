@@ -66,6 +66,8 @@ if __name__ == '__main__':
 
     # Read names.txt 
     data = []
+    # sometimes this can give a problem ... 
+    # if it does try the new line with just \n
     f = open("./names.txt","r", newline='\r\n') 
     for line in f: 
         # print(line.split())
