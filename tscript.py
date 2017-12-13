@@ -70,7 +70,9 @@ if __name__ == '__main__':
     for line in f: 
         # print(line.split())
         cline = cleanLine(line)
-        data.append(cline.upper().split())
+        dat = cline.upper().split()
+        print(dat)
+        data.append(dat)
     f.close()
     # print(data)
 
