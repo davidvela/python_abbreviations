@@ -1,0 +1,5 @@
+['TESTS']  -  TSS
+['OBJECT', 'ORIENTED', 'PROGRAMMING']  -  OOP
+['COLD']  -  CLD
+['COOL']  -  COL
+['C', 'CODE']  -  CCD

@@ -73,7 +73,7 @@ if __name__ == '__main__':
         # print(line.split())
         cline = cleanLine(line)
         dat = cline.upper().split()
-        print(dat)
+        # print(dat)
         data.append(dat)
     f.close()
     # print(data)
@@ -90,7 +90,12 @@ if __name__ == '__main__':
     #print(values)
 
     # Calculate Ab. 
+    f = open("./names_abbrevs.txt","w", newline='\n') 
     for name in data: 
         ab =  names(name)
-        print("{} - {} ".format(name,ab ))
+        outline = str(name) + "  -  " + str(ab) + "\n"
+        # print("{} - {} ".format(name,ab ))
+        print(outline)
         #Store the string in a file: names_abbrevs.txt
+        f.write(outline)
+    f.close()
